@@ -75,7 +75,7 @@ function App() {
           </div>
           <div>
             <Link to="/cart">
-              Cart
+              Carrito
               {cartItems.length > 0 && (
                 <span className="badge">{cartItems.length}</span>
               )}
@@ -83,36 +83,36 @@ function App() {
             {userInfo ? (
               <div className="dropdown">
                 <Link to="#">
-                  {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+                  Hola {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
                 </Link>
                 <ul className="dropdown-content">
                   <li>
-                    <Link to="/profile">User Profile</Link>
+                    <Link to="/profile">Perfil de Usuario</Link>
                   </li>
                   <li>
-                    <Link to="/orderhistory">Order History</Link>
+                    <Link to="/orderhistory">Historial de Compras</Link>
                   </li>
                   <li>
                     <Link to="#signout" onClick={signoutHandler}>
-                      Sign Out
+                      Finalizar Sesión
                     </Link>
                   </li>
                 </ul>
               </div>
             ) : (
-              <Link to="/signin">Sign In</Link>
+              <Link to="/signin">Registrarse</Link>
             )}
             {userInfo && userInfo.isSeller && (
               <div className="dropdown">
                 <Link to="#admin">
-                  Seller <i className="fa fa-caret-down"></i>
+                  Vendedor <i className="fa fa-caret-down"></i>
                 </Link>
                 <ul className="dropdown-content">
                   <li>
-                    <Link to="/productlist/seller">Products</Link>
+                    <Link to="/productlist/seller">Productos</Link>
                   </li>
                   <li>
-                    <Link to="/orderlist/seller">Orders</Link>
+                    <Link to="/orderlist/seller">Ordenes</Link>
                   </li>
                 </ul>
               </div>
@@ -127,13 +127,13 @@ function App() {
                     <Link to="/dashboard">Dashboard</Link>
                   </li>
                   <li>
-                    <Link to="/productlist">Products</Link>
+                    <Link to="/productlist">Productos</Link>
                   </li>
                   <li>
-                    <Link to="/orderlist">Orders</Link>
+                    <Link to="/orderlist">Ordenes</Link>
                   </li>
                   <li>
-                    <Link to="/userlist">Users</Link>
+                    <Link to="/userlist">Usuarios</Link>
                   </li>
                 </ul>
               </div>

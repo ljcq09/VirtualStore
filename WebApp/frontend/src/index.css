@@ -273,9 +273,9 @@ img.large {
 .dropdown-content {
   position: absolute;
   display: none;
-  right: 0;
-  min-width: 12rem;
-  padding: 1rem;
+  right: 10;
+  min-width: 18rem;
+  padding: .5rem;
   z-index: 1;
   background-color: #203040;
   margin: 0;
@@ -372,18 +372,3 @@ img.large {
 .pagination a.active {
   font-weight: bold;
 }
-
-/*.fa-navicon::before,
-.fa-reorder::before,
-.fa-bars::before {
-  content: "\f0c9";
-}
-
-.fa{
-display: inline-block;
-font: normal normal normal 14px/1 FontAwesome;
-font-size: inherit;
-text-rendering: auto;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}*/
