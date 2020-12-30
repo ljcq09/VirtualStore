@@ -143,7 +143,7 @@ function App() {
         <aside className={sidebarIsOpen ? 'open' : ''}>
           <ul className="categories">
             <li>
-              <strong>Categories</strong>
+              <strong>Categorias</strong>
               <button
                 onClick={() => setSidebarIsOpen(false)}
                 className="close-sidebar"
@@ -242,7 +242,7 @@ function App() {
 
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-        <footer className="row center">All right reserved</footer>
+        <footer className="row center">Todos los derechos reservados</footer>
       </div>
     </BrowserRouter>
   );
